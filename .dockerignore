@@ -1,0 +1,11 @@
+.git/
+.vscode/
+examples/
+node_modules/
+.gitignore
+.npmrc
+config.json
+Dockerfile
+npm-debug.log
+package-lock.json
+README.md

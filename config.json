@@ -1,0 +1,16 @@
+{
+    "name": "Nuimo Controller",
+    "version": "1.0.0",
+    "slug": "nuimo",
+    "description": "Addon for Nuimo controller by Scenic, implemented with NodeJS and MQTT",
+    "startup": "application",
+    "boot": "auto",
+    "options": {
+        "mqtt": {
+            "host": "",
+            "username": "",
+            "password": ""
+        }
+    },
+    "schema": {}
+  }
