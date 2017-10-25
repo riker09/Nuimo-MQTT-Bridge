@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 
 USER 0:0
 
-RUN apk add --no-cache jq nodejs nodejs-npm
+RUN apk add --no-cache jq nodejs nodejs-npm python make g++ linux-headers eudev-dev
 
 WORKDIR /app
 
