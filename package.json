@@ -15,6 +15,7 @@
     "debug": ">=2.2.0",
     "mqtt": "2.12.1",
     "noble": ">=1.8.0",
-    "nuimojs": "1.0.3"
+    "nuimojs": "1.0.3",
+    "bluetooth-hci-socket": "^0.5.1"
   }
 }
