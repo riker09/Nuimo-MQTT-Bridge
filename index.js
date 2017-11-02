@@ -2,6 +2,7 @@
 
 let Nuimo  = require("nuimojs"),
     mqtt   = require("mqtt"),
+    fs     = require("fs"),
     _      = require("lodash"),
     matrix = require("./matrix.js");
 
@@ -10,9 +11,11 @@ let state = {
     nuimo : { connected: false }
 }
 
-const client = mqtt.connect('mqtt://192.168.178.2', {
-    username: "mqtt",
-    password: "theL5iso"
+let config = JSON.parse(fs.readFileSync('/data/options.json', 'utf8'));
+
+const client = mqtt.connect('mqtt://' + config.mqtt.host, {
+    username: config.mqtt.username,
+    password: config.mqtt.password
 });
 client.on("connect", () => {
     console.log("MQTT connected")
