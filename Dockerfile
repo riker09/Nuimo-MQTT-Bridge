@@ -5,14 +5,21 @@ ENV LANG C.UTF-8
 
 USER 0:0
 
-RUN apk add --no-cache jq nodejs nodejs-npm python make g++ linux-headers eudev-dev
+RUN apk add --no-cache \
+    eudev-dev \
+    g++ \
+    jq \
+    linux-headers \
+    make \
+    nodejs \
+    nodejs-npm \
+    python
 
 WORKDIR /app
 
 # Copy data for add-on
 COPY . /app
 
-RUN npm install
+RUN npm install --no-save --production
 
 CMD [ "node", "index.js" ]
-
