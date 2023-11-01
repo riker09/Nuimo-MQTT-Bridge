@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "4.17.19",
-    "async": "2.6.2",
+    "async": "2.6.4",
     "debug": "4.3.1",
     "mqtt": "2.18.8",
     "noble": "1.9.1",
